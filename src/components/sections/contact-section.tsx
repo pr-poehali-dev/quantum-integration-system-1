@@ -44,11 +44,11 @@ export function ContactSection() {
               }`}
             >
               <h2 className="mb-2 font-sans text-4xl font-light leading-[1.05] tracking-tight text-foreground md:mb-3 md:text-7xl lg:text-8xl">
-                Давайте
+                Начните
                 <br />
-                поговорим
+                прямо сейчас
               </h2>
-              <p className="font-mono text-xs text-foreground/60 md:text-base">/ Свяжитесь с нами</p>
+              <p className="font-mono text-xs text-foreground/60 md:text-base">/ Попробуйте бесплатно</p>
             </div>
 
             <div className="space-y-4 md:space-y-8">
@@ -64,7 +64,7 @@ export function ContactSection() {
                   <span className="font-mono text-xs text-foreground/60">Email</span>
                 </div>
                 <p className="text-base text-foreground transition-colors group-hover:text-foreground/70 md:text-2xl">
-                  info@flowrise.dev
+                  info@dataviz.ru
                 </p>
               </a>
 
@@ -143,14 +143,14 @@ export function ContactSection() {
                 }`}
                 style={{ transitionDelay: "500ms" }}
               >
-                <label className="mb-1 block font-mono text-xs text-foreground/60 md:mb-2">Сообщение</label>
+                <label className="mb-1 block font-mono text-xs text-foreground/60 md:mb-2">Вопрос или пожелание</label>
                 <textarea
                   rows={3}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   required
                   className="w-full border-b border-foreground/30 bg-transparent py-1.5 text-sm text-foreground placeholder:text-foreground/40 focus:border-foreground/50 focus:outline-none md:py-2 md:text-base"
-                  placeholder="Расскажите о вашем проекте..."
+                  placeholder="Например: хочу дашборд по отделу продаж..."
                 />
               </div>
 
